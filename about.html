@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+
+    <style>
+        nav{
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            background-color: aqua;
+            border: 2px solid white;
+            border-radius: 30px;
+            color: rgb(231, 45, 169);
+            text-decoration: underline;
+            position: fixed;
+            width: 95%;
+            margin-left: 20px;
+        }
+        body{ background-color: rgb(161, 159, 159);}
+        .black { width: 30px;
+                 height: 30px;}
+        .nav{ height: fit-content;
+            width: fit-content;
+            position: fixed;
+            margin-top: 70px;
+            margin-left: 90%;
+        }
+        .icon {
+             color: rgb(97, 93, 93);
+             padding-top: 20px;
+             width: 60px;
+             height: 60px;
+        }
+        .wireframe { border-radius: 50px;
+            height: 30px;
+            margin-top: 30px;
+            background-image: linear-gradient(rgb(242, 6, 218), rgb(56, 3, 250));
+        }
+        main{ display: grid;
+            background-color:  rgb(97, 93, 93);
+            gap: 10px;
+            grid-template-rows: 200px 200px 200px 200px;
+            grid-template-columns: 65% 1fr;
+            padding-top: 100px;
+        }
+        .infor{  border: 2px solid black;
+             width: 100%;
+            height: fit-content;
+            grid-row: 1/3;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: center; 
+        }
+        .two {border: 2px solid blue;
+            border-radius: 50px;
+            width: 300px;
+            background-color: black;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            color: orange;
+            font-size: xx-large;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+        }
+        .three { border: 0px solid;
+                width: 300px;
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .four { border: 2px solid blue;
+               height: fit-content;
+               border-radius: 50px;
+            grid-row: 3/4;
+            grid-column: 1/3;
+        }
+        .five {display: flex;
+            grid-row: 4/5;
+            grid-column: 1/3;
+        }
+        #two { font-size: 22px;
+              color: white;
+        }
+        .cv {
+             width: 50%;
+             height: 80px;
+             display: flex;
+             border-radius: 50px;
+             border: 2px solid blue;
+             background-color: black;
+             justify-content: space-around;
+             align-items: center;
+            }
+            .cv:hover { background-color: rgb(44, 29, 29);}
+        .cvicon { 
+                 width: 30px;
+                height:  30px;
+                 }
+         #dcv {font-size: xx-large;
+                color: white;
+                width: 50%;
+               }
+        .head {color: orangered;
+                font-size: 40px;}
+        .blue { color: blue;
+               font-size: 30px;}
+        .he { color: orangered;
+             font-size: 16px;
+             padding: 7px;}
+        .blu { color: white;
+               font-size: 15px;
+              padding: 7px;}
+        .exp { border: 2px solid blue;
+            background-color: black;
+               border-radius: 50px;}
+        .skil {  color: rgb(231, 45, 169);
+                 justify-content: center;
+                align-items: center;
+                 margin-left: 50%;
+                }
+        .html { background-color: blue;
+                border-radius: 10px;
+                height: 5px;
+                width: 20%;
+                 border-right: 40px solid white;}
+
+        .pcnt { font-size: large;
+                display: flex;
+                margin-left: 10%;
+                color: white;}
+
+        .java{  background-color: blue;
+                border-radius: 10px;
+                height: 5px;
+                width: 20%;
+                 border-right: 70px solid white; }
+
+        .jpcnt{ font-size: large;
+                display: flex;
+                margin-left: 10%;
+                color: white;}
+
+        .ppcnt { display: flex;
+                 font-size: large; 
+                color: white;
+                 margin-left: 50%;}
+ 
+        .css {background-color: blue;
+                border-radius: 10px;
+                height: 5px;
+                width: 30%;
+                 border-right: 25px solid white;}
+                 
+        .cpcnt { display: flex;
+                margin-left: 50%;
+                color: white;
+                  font-size: large;}
+         .dev {
+                width: 30%;
+                height: 200px;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 50px;
+                 background-color: black;
+                font-size: 100%;}
+
+        .devhead { border: 1px solid black;
+                   width: fit-content;
+                   margin-left: 30%;
+                   border-radius: 10px;
+                   background-color: rgb(93, 88, 88);
+                   justify-content: center;
+                   align-items: center;}
+        .devblu { color: rgb(0, 106, 255);}
+
+        
+@media screen and ( max-width: 700px) {
+                  nav {
+                margin-left: 0px;}
+                .nav { display: flex;
+                      height: 100px;
+                      width: fit-content;
+                      padding-top: 95%;
+                      margin-left: 0%;
+                  }
+                  .icon { padding-left: 10px;
+                         
+                }
+                main {
+                    grid-template-rows: 375px 260px 200px 200px;
+                    grid-template-columns: 1fr 1fr;
+                }
+                .infor { grid-row: 1/2;
+                       grid-column: 1/3;
+                       height: fit-content;
+                        }
+                    
+                .two { grid-row: 2/3;
+                    width: 100%;
+                       grid-column: 1/2;}
+                .three { grid-row: 2/3;
+                      margin-left: 10px;
+                    width: 100%;
+                         grid-column: 2/3;}
+                .four { grid-row: 3/4;
+                        grid-column: 1/3;
+                        display: inline;
+                        justify-content: center;
+                        align-items: center;
+                        }
+                .five{ display:flex; grid-row: 4/5;
+                       grid-column: 1/3;}
+                .cv { width: 100%;
+                      height: 100px;}
+                p { font-size: 100%;}
+                #two { font-size: 16px;}
+                .ppcnt{ margin-left: 10%;}
+                .cpcnt{ margin-left: 10%;}
+
+                .dev { width: 100%;
+                       height: 180px;
+                    font-size: small;}
+                .devhead {  margin-left: 20%;
+                         font-size: small;}
+                
+                
+      }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>ABOUT ME</h1>
+        <div> <img src="about.png" alt="ABOUT ME" class="black"></div>
+        <div> <img src="Group 50.png" alt="Dark mode" class="black"></div>
+    </nav>
+    <div class="nav">
+        <div><a href="home.html"><img src="home.png" alt="home" class="icon"></a> </div>
+        <div> <img src="about.png" alt="about me" class="icon"> </div>
+        <div> <a href="portfolio.html"><img src="potfolio.png" alt="Portfolio" class="icon"></a> </div>
+        <div> <a href="contact.html"><img src="contact.png" alt="contact" class="icon"></a> </div>
+        <div id="wireframe"><button  class="wireframe"> <a href="https://xd.adobe.com/view/a8cba0be-d98
+        2-47da-a8b9-bcf972bfb49d-fd98/?fbclid=IwAR1INvtlp1Tnx7Djjyext0QXnVkiNREpy9IsYn-VMJD0FkcO8og6SEek
+        aTc"> see UI/UX</a></button></div>
+    </div>
+    <main>
+        <div class="infor">
+            <p id="two"> Ezemuonye Fredrick Chinedu is a full stack web developer, product designer, and
+                a well trained ppharmacist assistant.
+            </p>
+            <P id="two"> This senior developer who designs with all CS platform, starting from XD to PS and to AI. 
+                also devlope web using HTML, CSS, JavaScript, and all other web design tools. He is the CEO and top 
+                developer in DLyons world of art (DWA), the owner of DLyon pharmacy LTD.</P>
+
+            <p id="two"> Santex has successfully gained lots of progresss in all his career starting from
+                his design expert to his mobile banking service where he helps the society by lending
+                money with the lowest rate of interest.
+            </p>
+                <button class="cv"><h2 id="dcv"> DOWNLOAD CV</h2><img src="download.png" alt="CV" class="cvicon"> </button>
+      </div>
+
+        <div class="two"><p class="blue"> <span class="head">countless</span> <br> <br> Projects completed</p></div>
+
+        <div class="three">
+            <div class="exp"> <p class="blu"> <span class="he">5 years</span> of pharmacy experience</p></div>
+        <div class="exp"> <p class="blu"> <span class="he">2 years</span> of web dev experience</p></div>
+        <div class="exp"> <p class="blu"> <span class="he">2 years</span> of mobile banking service</p></div>
+        </div>
+
+        <div class="four"> <h1 class="skil">SKILLS</h1>
+            <div class="pcnt">HTML 80% <br><div class="html"></div></div>
+            <div class="cpcnt">CSS 90% <div class="css"></div></div>
+            <div class="jpcnt">JAVASCRIPT 60% <div class="java"></div></div>
+            <div class="ppcnt">PYTHON 60% <div class="java"></div></div>
+            <div class="pcnt">PHARMACY EXPERIENCE 80% <div class="html"></div></div>
+            <div class="cpcnt">UI/UX DESIGN 90% <div class="css"></div></div>
+        </div>
+
+        <div class="five"> 
+            <div class="dev"> <h1 class="devhead">2021-PRESENT</h1>
+            SENIOR DEVELOPER @ DLYONS WORLD OF ART. <br> <br> <span class="devblu"> Currently
+           the CEO and working as code writer and UI/UX designer.
+            </span> 
+            </div>
+            <div class="dev"> <h1 class="devhead">2016-2021</h1>
+                PHARMACIST ASSISTANT @ DAMOYA PHARMACY <br> <br> <span class="devblu"> Worked
+                as a pharmacist and also as a drug distributor
+                </span></div>
+            <div class="dev"> <h1 class="devhead">2020-PRESENT</h1>
+                SYSTEM PROGRAMMER @ DLYONS MOBILE BANKING <br> <br><span class="devblu"> Own a
+                loan banking appplication
+                </span>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

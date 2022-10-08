@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+         nav{
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            background-color: aqua;
+            border: 2px solid white;
+            border-radius: 30px;
+            color: rgb(231, 45, 169);
+            text-decoration: underline;
+            position: fixed;
+            width: 95%;
+            margin-left: 20px;
+        }
+        body{ background-color: rgb(161, 159, 159);}
+        .black { width: 30px;
+                 height: 30px;}
+        .nav{ height: fit-content;
+            width: fit-content;
+            position: fixed;
+            margin-top: 70px;
+            margin-left: 90%;
+        }
+        .icon {
+             color: rgb(97, 93, 93);
+             padding-top: 20px;
+             width: 60px;
+             height: 60px;
+        }
+        .wireframe { border-radius: 50px;
+            height: 30px;
+            margin-top: 30px;
+            background-image: linear-gradient(rgb(242, 6, 218), rgb(56, 3, 250));
+        }
+        #msg {position: fixed;
+             padding-top: 60px;
+             }
+        .msg {
+            width: 70px;
+            height: 70px;
+        }
+        .ms { padding-top: 100px;
+             margin-left: 30%;
+            color:white ;
+          font-size: 50px   }
+
+        .cnt{ margin-left: 8%;
+              color: wheat;
+            font-size: xx-large;}
+        #cnt { 
+            width: 30px;
+            height: 30px;
+        }
+        ul {  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: 1s;
+             position: absolute;
+            padding-top:120px ;}
+        input{ border: 1px dashed blue;
+            border-radius: 30px;}
+        textarea {
+            border: 1px solid blue;
+            border-radius: 20px;
+        }
+        .submit { width: 90px; 
+                  height: 30px;
+                 font-size: large;
+                border-radius: 20px;
+                }
+
+        .new {
+             clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+   }
+   .cv { width: 40%;
+             height: 18%;
+             display: flex;
+             border-radius: 50px;
+             border: 2px solid blue;
+             background-color: black;
+             justify-content: space-around;
+             align-items: center;
+             margin-left: 30%;
+            }
+   
+   .cvicon { 
+             width: 30px;
+            height:  30px;
+             }
+     #dcv {font-size: xx-large;
+        color: white;
+           width: 50%;
+            }
+
+
+
+        @media screen and (max-width: 650px) {
+            nav {
+                margin-left: 0px;}
+             .nav { display: flex;
+                      height: 100px;
+                      width: fit-content;
+                      padding-top: 95%;
+                      margin-left: 0%;
+                  }
+              .icon { padding-left: 10px;
+                         }
+                         
+              .cv { width: 80%;
+                    margin-left: 10%;
+                   } 
+            }
+    </style>
+</head>
+<body>
+    
+
+    <nav>
+        <h1>CONTACT ME</h1>
+        <div> <img src="contact.png" alt="CONTACT ME" class="black"></div>
+        <div> <img src="Group 50.png" alt="Dark mode" class="black"></div>
+    </nav>
+    <div class="nav">
+        <div><a href="home.html"><img src="home.png" alt="home" class="icon"></a> </div>
+        <div><a href="about.html"> <img src="about.png" alt="about me" class="icon"></a> </div>
+        <div> <a href="portfolio.html"><img src="potfolio.png" alt="Portfolio" class="icon"></a> </div>
+        <div> <a href="contact.html"><img src="contact.png" alt="contact" class="icon"></a> </div>
+        <div id="wireframe"><button  class="wireframe"> <a href="https://xd.adobe.com/view/a8cba0be-d98
+        2-47da-a8b9-bcf972bfb49d-fd98/?fbclid=IwAR1INvtlp1Tnx7Djjyext0QXnVkiNREpy9IsYn-VMJD0FkcO8og6SEek
+        aTc"> see UI/UX</a></button></div>
+    </div>
+    
+    <P id="msg">  <img src="massage.png" alt="" class="msg"></P>    
+     <ul>
+        <li><input type="text" placeholder="Your name"></li>
+        <li><input type="text" placeholder="Email"></li>
+        <li><input type="text" placeholder="Subject matter"></li>
+        <li><textarea name="" id="text" cols="30" rows="10" style="color: blue;">
+        Leave a massage</textarea></li>
+        <li><button type="submit" class="submit">Submit</button></li>
+     </ul>
+     <p class="ms"> My ways of contact are;</p>
+
+    <p class="cnt"> <img src="location.png" alt="" id="cnt"> 40 Igaoba compound, Ijegun Lagos Nigeria</p>
+    <p  class="cnt"> <img src="contact.png" alt="" id="cnt"> bosssantexdlyon@gmail.com</p>
+    <p  class="cnt"> <img src="about.png" alt="" id="cnt"> 08163895833 or 09019492901</p>
+    <p  class="cnt"> <img src="language.png" alt="" id="cnt"> English and Igbo</p>
+    <p  class="cnt"> <img src="git.png" alt="" id="cnt"> santexdlyon.github.com</p>
+    <p  class="cnt"> <img src="facebook.png" alt="" id="cnt"> D Lyon Santex</p>
+    <p  class="cnt"> <img src="whatsapp.png" alt="" id="cnt">08163895833</p>
+
+    <button class="cv"><h2 id="dcv"> DOWNLOAD CV</h2><img src="download.png" alt="CV" class="cvicon"> </button>
+</body>
+
+
+<script>
+    msg = document.querySelector(".msg");
+    msg.onclick = ()=>{
+        document.querySelector("ul").classList.toggle("new")
+    }
+    submit = document.querySelector(".submit");
+    submit.onclick = ()=>{
+        document.querySelector("ul").classList.toggle("new")
+    }
+</script>
+</html>

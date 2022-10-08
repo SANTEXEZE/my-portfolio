@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+         nav{
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            background-color: aqua;
+            border: 2px solid white;
+            border-radius: 30px;
+            color: rgb(231, 45, 169);
+            text-decoration: underline;
+            position: fixed;
+            width: 95%;
+            margin-left: 20px;
+        }
+        body{ background-color: rgb(124, 117, 117);}
+        .black { width: 30px;
+                 height: 30px;}
+        .nav{ height: fit-content;
+            width: fit-content;
+            position: fixed;
+            margin-top: 70px;
+            margin-left: 90%;
+        }
+        .icon {
+             color: rgb(97, 93, 93);
+             padding-top: 20px;
+             width: 60px;
+             height: 60px;
+        }
+        .wireframe { border-radius: 50px;
+            height: 30px;
+            margin-top: 30px;
+            background-image: linear-gradient(rgb(242, 6, 218), rgb(56, 3, 250));
+        }
+        main{ padding-top: 100px;
+             display: flex;
+              gap: 10px;}
+         #cvdp { background-color: black;
+               }
+        .cvdp {width: 50%;
+            height: 700px;}
+        .infor { width: 40%;
+                 height: fit-content;
+                justify-content: center;
+                align-items: center; 
+                font-size: 42px;}
+        .dp { width: 100%;
+            height: 80%;
+              }
+        .cv { width: 80%;
+             height: 18%;
+             display: flex;
+             border-radius: 50px;
+             border: 2px solid blue;
+             background-color: black;
+             justify-content: space-around;
+             align-items: center;
+            }
+        .cv:hover { background-color: rgb(44, 29, 29);}
+        .cvicon { 
+                 width: 30px;
+                height:  30px;
+                 }
+        #dcv {font-size: xx-large;
+            color: white;
+            width: 50%;
+               }
+        #one { font-size: x-large;
+               color: orange;}
+        #two {
+              color: white;
+        }
+
+
+
+        @media screen and (max-width: 650px) {
+            nav {
+                margin-left: 0px;}
+                .nav { display: flex;
+                      height: 100px;
+                      width: fit-content;
+                      padding-top: 95%;
+                      margin-left: 0%;
+                  }
+                  .icon { padding-left: 10px;
+                         
+                }
+            main { display: inline;
+                   gap: 10px;
+                   margin-top: 100px;
+                 }
+            #cvdp{ width: 100%;}
+            .cv:hover { background-color: rgb(44, 29, 29);}
+                
+        
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>HOME</h1>
+        <div> <img src="home.png" alt="HOME" class="black"></div>
+        <div> <img src="Group 50.png" alt="Dark mode" class="black"></div>
+    </nav>
+    <div class="nav">
+        <div><img src="home.png" alt="home" class="icon"> </div>
+        <div><a href="about.html">  <img src="about.png" alt="about me" class="icon"></a> </div>
+        <div> <a href="portfolio.html"><img src="potfolio.png" alt="Portfolio" class="icon"> </a></div>
+        <div> <a href="contact.html"><img src="contact.png" alt="contact" class="icon"></a> </div>
+        <div id="wireframe"><button  class="wireframe"> <a href="https://xd.adobe.com/view/a8cba0be-d98
+        2-47da-a8b9-bcf972bfb49d-fd98/?fbclid=IwAR1INvtlp1Tnx7Djjyext0QXnVkiNREpy9IsYn-VMJD0FkcO8og6SEek
+        aTc"> see UI/UX</a></button></div>
+    </div>
+    <main>
+        <div id="cvdp" class="cvdp">
+            <img src="my-dp.png" alt="photo of me" class="dp">
+            <button class="cv"><h2 id="dcv"> DOWNLOAD CV</h2><img src="download.png" alt="CV" class="cvicon"> </button>
+        </div>
+        <div id="cvdp" class="infor">
+          <p id="one"> Hello, my names are;</p>
+          <p id="two"> Ezemuonye Fredrick Chinedu <br> <span>AKA</span> Santex D Lyon </p> 
+          <p id="one"> I AM A PRODUCT DESIGNER</p>
+          <P id="two"> Santex is a product designer, a  web developer, and a well trained pharmacist assistant.
+              I design with all CS platform, starting from XD to PS and to AI. I devlope web using HTML, CSS, JavaScript,
+              and all other web design... <a href="about.html">Read more</a></P>
+    
+        </div>
+    </main>
+</body>
+</html>
